@@ -11,8 +11,12 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
     
-    <bean id = "myCoach" class = "com.luv2code.springdemo.BaseballCoach">
+    <!-- define the dependency -->
+    <bean id = "myFortune" class="com.luv2code.springdemo.HappyFortuneService"></bean>
     
+    <bean id = "myCoach" class = "com.luv2code.springdemo.TrackCoach">
+    	<!-- set up constructor injection -->
+    	<constructor-arg ref="myFortune"/>
     </bean>
-    
+
 </beans>
