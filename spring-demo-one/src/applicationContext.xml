@@ -18,5 +18,11 @@
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune"/>
     </bean>
+    
+    <bean id = "myCricketCoach" class = "com.luv2code.springdemo.CricketCoach">
+    	<!-- com.luv2code.springdemo.CricketCoach -->
+    	<property name = "fortuneService" ref = "myFortune"/>
+    	
+    </bean>
 
 </beans>

@@ -10,6 +10,10 @@ public class BaseballCoach implements Coach {
 		fortuneService = theFortuneService;
 	}
 	
+	public BaseballCoach() {
+		
+	}
+	
 	@Override
 	public String getDailyWorkout() {
 		return "spend 30 min on batting practice.";
