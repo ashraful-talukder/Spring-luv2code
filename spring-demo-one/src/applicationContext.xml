@@ -11,6 +11,9 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
     
+    <!-- load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
     <!-- define the dependency -->
     <bean id = "myFortune" class="com.luv2code.springdemo.HappyFortuneService"></bean>
     
@@ -23,6 +26,18 @@
     	<!-- com.luv2code.springdemo.CricketCoach -->
     	<property name = "fortuneService" ref = "myFortune"/>
     	
+    	<!-- inject literal values -->
+    	<property name = "email" value = "ashraful.talukder24@gmail.com"/>
+    	<property name = "team" value = "Mountain Movers"/>
+    </bean>
+    
+    <bean id = "myCricketCoachAnother" class = "com.luv2code.springdemo.CricketCoach">
+    	<!-- com.luv2code.springdemo.CricketCoach -->
+    	<property name = "fortuneService" ref = "myFortune"/>
+    	
+    	<!-- inject literal values -->
+    	<property name = "email" value = "${foo.email}"/>
+    	<property name = "team" value = "${foo.team}"/>
     </bean>
 
 </beans>
