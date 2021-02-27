@@ -11,7 +11,7 @@ public class TrackCoach implements Coach {
 	}
 	
 	public TrackCoach() {
-		
+		 
 	}
 
 	@Override
