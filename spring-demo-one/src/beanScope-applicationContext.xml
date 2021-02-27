@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    ">
+    
+    <!-- bean scope refers to the life cycle of a bean. if we don't mention the scope of bean then it is a singleton
+    by default but if we declare the scope and mention whether it is singleton or prototype then it will act
+    just like we've declared. the term singleton means spring creates only one bean address for that particular
+    bean and it's been shared by all of the contexts whether for the prototype scope spring create e new reference
+    for each context. --> 
+    
+    <!-- define the dependency -->
+    <bean id = "myFortune" class="com.luv2code.springdemo.HappyFortuneService"></bean>
+    
+    <bean id = "myCoach" class = "com.luv2code.springdemo.TrackCoach" scope = "prototype">
+    	<!-- set up constructor injection -->
+    	<constructor-arg ref="myFortune"/>
+    </bean>
+    
+</beans>
