@@ -7,7 +7,7 @@
 <title>Welcome to Spring</title>
 </head>
 <body>
-<h2 align="center">Congratulations, you've run your first Spring project!</h2>
+	<h2 align="center">Congratulations, you've run your first Spring project!</h2>
 	<a href="showForm">Hello World Form</a>
 </body>
 </html>
