@@ -8,7 +8,6 @@
 </head>
 <body>
 <h2 align="center">Congratulations, you've run your first Spring project!</h2>
-<ol>
 	<a href="showForm">Hello World Form</a>
 </ol>
 </body>
