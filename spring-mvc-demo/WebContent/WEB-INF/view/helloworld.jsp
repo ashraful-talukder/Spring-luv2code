@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>title</title>
 </head>
 <body>
-<h2 align="center">Congratulations, you've run your first Spring project!</h2>
-<ol>
-	<a href="showForm">Hello World Form</a>
-</ol>
+
+Hello World of Spring!
+<br> <br>
+
+Student name: ${param.studentName}
+
 </body>
 </html>
