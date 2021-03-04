@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-test
+<h2 align="center">Congratulations, you've run your first Spring project!</h2>
 </body>
 </html>
