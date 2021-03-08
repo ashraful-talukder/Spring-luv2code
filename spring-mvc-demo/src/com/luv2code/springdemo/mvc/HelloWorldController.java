@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 	
 	// need a controller method to show the initial form
@@ -27,7 +28,7 @@ public class HelloWorldController {
 	// new a controller method to read form data and add data to the model
 	
 	@RequestMapping("/processFormVersionTwo")
-	public String letsShoutDude(HttpServletRequest request, Model model) {
+	public String letsShoutDude(HttpServletRequest request, Model model) { 
 		
 		// read the request parameter from the HTML form
 		String theName = request.getParameter("studentName");
