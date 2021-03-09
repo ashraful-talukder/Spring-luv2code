@@ -4,14 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome to Spring</title>
+<title>Student Confirmation</title>
 </head>
 <body>
-	<h2 align="center">Congratulations, you've run your first Spring project!</h2>
-	<ul>
-		<li><a href="hello/showForm">Hello World Form</a></li>
-		<br> <br>
-		<li><a href="student/showForm">Student Form</a></li>
-	</ul>
+
+	The student is confirmed: ${student.firstName} ${student.lastName}
+	
 </body>
 </html>
