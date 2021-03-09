@@ -36,6 +36,14 @@
 		R<form:radiobutton path="favoriteLanguage" value="R"/>	
 	
 		<br><br>
+		
+		Operating System: <br>
+		
+		Linux<form:checkbox path="operatingSystems" value="Linux"/>
+		Mac<form:checkbox path="operatingSystems" value="Mac OS"/>
+		Windows<form:checkbox path="operatingSystems" value="Windows"/>
+		
+		<br><br>
 	
 		<input type="submit" value="submit"/>
 		
