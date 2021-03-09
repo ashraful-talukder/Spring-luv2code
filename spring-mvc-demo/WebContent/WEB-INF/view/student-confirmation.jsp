@@ -9,7 +9,8 @@
 <body>
 
 	The student is confirmed: ${student.firstName} ${student.lastName} <br>
-	You have selected your country ${student.country}
+	You have selected your country ${student.country} <br>
+	Your Favorite Language : ${student.favoriteLanguage}
 	
 </body>
 </html>
