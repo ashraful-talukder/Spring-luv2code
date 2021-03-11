@@ -12,7 +12,7 @@
 
 	<i>You must have to fill up the form where Asterisk(*) available</i>
 
-	<form:form action="" modelAttributes="Customer"> 
+	<form:form action="showForm" modelAttributes="Customer"> 
 		First name: <form:input path="firstName"/> 
 		
 		<br> <br>
