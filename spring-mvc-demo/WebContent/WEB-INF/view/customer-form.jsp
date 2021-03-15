@@ -11,13 +11,15 @@
 <body>
 
 	<i>You must have to fill up the form where Asterisk(*) available</i>
+	
+	
 
 	<form:form action="processForm" modelAttributes="customer"> 
 		First name: <form:input path="firstName"/> 
 		
 		<br> <br>
 		
-		Last name<style color="red">*</style>: <form:input path="lastName"/>
+		Last name<p style="color:red;">*</p>: <form:input path="lastName"/>
 		<form:errors path="lastName" cssClass="error"/>
 		
 		<br> <br>

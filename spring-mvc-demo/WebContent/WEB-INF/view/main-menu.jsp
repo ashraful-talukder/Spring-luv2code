@@ -10,9 +10,9 @@
 	<h2 align="center">Congratulations, you've run your first Spring project!</h2>
 	<ul>
 		<li><a href="hello/showForm">Hello World Form</a></li>
-		<br> <br>
+		<br>
 		<li><a href="student/showForm">Student Form</a></li>
-		<br> <br>
+		<br>
 		<li><a href="customer/showForm">Customer Form</a></li>
 	</ul>
 </body>
