@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hello World - Input Form</title>
+<title>Insert title here</title>
 </head>
 <body>
-
-	<form action="processFormVersionThree" method="get">
-		<input type="text" name="studentName" placeholder="Write your name"/>
-		<input type="submit"/>
-	</form>
-	
+	Welcome to the silly world!
 </body>
 </html>
