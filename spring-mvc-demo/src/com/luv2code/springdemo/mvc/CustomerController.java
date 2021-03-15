@@ -14,12 +14,14 @@ public class CustomerController {
 
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
-		theModel.addAttribute("customer", new Customer());
+		Customer theCustomer = new Customer();
+		theModel.addAttribute("customer", theCustomer);
 		return "customer-form";
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer, BindingResult theBindingResult) {
+	public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer, 
+			BindingResult theBindingResult) {
 		if(theBindingResult.hasErrors()) {
 			return "customer-form";
 		} else {
