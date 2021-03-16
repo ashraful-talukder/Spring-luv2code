@@ -15,7 +15,7 @@
 	<br> <br>
 
 	<form:form action="processForm" modelAttribute="customer"> 
-		First Name: <form:input path="firstName"/> 
+		First Name: <form:input path="firstName"/>
 		
 		<br> <br>
 		

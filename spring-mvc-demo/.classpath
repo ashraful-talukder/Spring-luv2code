@@ -49,9 +49,7 @@
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/websocket-api.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/classmate-1.5.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-validator-7.0.0.Final.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-validator-annotation-processor-7.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-validator-cdi-7.0.0.Final.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta.el-4.0.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta.validation-api-3.0.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.el-3.0.1-b08.jar"/>
