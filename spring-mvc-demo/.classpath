@@ -124,5 +124,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-websocket-5.3.3-javadoc.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-websocket-5.3.3-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-websocket-5.3.3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/validation-api-2.0.0.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
