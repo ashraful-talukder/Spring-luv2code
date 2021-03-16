@@ -1,5 +1,6 @@
 package com.luv2code.springdemo.mvc;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -8,6 +9,7 @@ public class Customer {
 
 	private String firstName;
 	
+	@Valid
 	@NotNull
 	@Size(min=1, message="is required")
 	private String lastName;
