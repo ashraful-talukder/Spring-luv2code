@@ -14,12 +14,12 @@
 	
 	<br> <br>
 
-	<form:form action="processForm" modelAttributes="customer"> 
+	<form:form action="processForm" modelAttribute="customer"> 
 		First Name: <form:input path="firstName"/> 
 		
 		<br> <br>
 		
-		Last name<p style="color:red;">*</p>: <form:input path="lastName"/>
+		Last name<span style="color:red;">*</span>: <form:input path="lastName"/>
 		<form:errors path="lastName" cssClass="error"/>
 		
 		<br> <br>
