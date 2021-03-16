@@ -50,8 +50,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/classmate-1.5.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-validator-annotation-processor-7.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta.el-4.0.0.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta.validation-api-3.0.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.el-3.0.1-b08.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
@@ -123,5 +121,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-websocket-5.3.3-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-websocket-5.3.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/validation-api-2.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-validator-7.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hibernate-validator-cdi-7.0.0.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
