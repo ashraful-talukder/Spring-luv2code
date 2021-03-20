@@ -9979,3 +9979,6 @@ Exception Details:
 
 !ENTRY org.eclipse.jface.text 2 0 2021-03-20 17:09:48.700
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2021-03-20 18:09:07.234
+!MESSAGE Port 31325 required by Tomcat v9.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
