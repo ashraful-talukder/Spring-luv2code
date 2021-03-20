@@ -9726,3 +9726,6 @@ org.apache.http.ConnectionClosedException: Premature end of Content-Length delim
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2021-03-20 11:54:22.257
 !MESSAGE Port 31325 required by Tomcat v9.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2021-03-20 14:11:14.428
+!MESSAGE Port 31325 required by Tomcat v9.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
