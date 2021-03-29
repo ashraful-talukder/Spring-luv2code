@@ -11876,3 +11876,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-03-29 16:39:26.070
 !MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-03-29 17:17:42.197
+!MESSAGE No repository found at http://dist.springsource.com/release/TOOLS/update/e4.4.
