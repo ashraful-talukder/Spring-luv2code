@@ -1,4 +1,4 @@
-package com.luv2code.demo.entity;
+package com.luv2code.hibernate.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
