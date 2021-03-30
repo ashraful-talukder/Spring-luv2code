@@ -29,9 +29,28 @@ public class QueryStudentDemo {
 			List<Student> theStudents = session.createQuery("from Student").list();
 			
 			// display the students
-			for (Student tempStudent : theStudents) {
-				System.out.println(tempStudent);
-			}
+			displayStudents(theStudents);
+			
+			//query students: firstName = "Ashraful"
+			theStudents = session.createQuery("from Student s where s.firstName = 'Ashraful'").list();
+			
+			// display the students
+			System.out.println("\n\nStudents who have first name of Ashraful:");
+			displayStudents(theStudents);
+			
+			// query students: lastName = 'Talukder' or firstName='Chayan'
+			theStudents = session.createQuery("from Student s where s.lastName = 'Talukder' OR s.firstName = 'Chayan'").list();
+			
+			// display the students
+			System.out.println("\n\nStudents who have first name of Chayan or last name of Talukder:");					
+			displayStudents(theStudents);
+			
+			// query students: like query
+			theStudents = session.createQuery("from Student s where s.email LIKE '%@gmail.com'").list();
+			
+			// display the students
+			System.out.println("\n\nStudents who have email ends with @gmail.com:");					
+			displayStudents(theStudents);
 			
 			// commit transaction
 			session.getTransaction().commit();
@@ -40,6 +59,12 @@ public class QueryStudentDemo {
 			
 		} finally {
 			factory.close();
+		}
+	}
+
+	private static void displayStudents(List<Student> theStudents) {
+		for (Student tempStudent : theStudents) {
+			System.out.println(tempStudent);
 		}
 	}
 

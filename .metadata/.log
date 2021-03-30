@@ -12142,3 +12142,79 @@ Exception Details:
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2021-03-30 15:24:39.793
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/eclipse/jdt/ui/text/java/correction/CUCorrectionProposal.createTextChange()Lorg/eclipse/ltk/core/refactoring/TextChange; @117: invokevirtual
+  Reason:
+    Type 'java/lang/Object' (current frame, stack[0]) is not assignable to 'org/eclipse/ltk/core/refactoring/TextChange'
+  Current Frame:
+    bci: @117
+    flags: { }
+    locals: { 'org/eclipse/jdt/ui/text/java/correction/CUCorrectionProposal', 'org/eclipse/jdt/core/ICompilationUnit', 'java/lang/String', 'java/lang/Object', 'org/eclipse/text/edits/MultiTextEdit' }
+    stack: { 'java/lang/Object', 'org/eclipse/text/edits/MultiTextEdit' }
+  Bytecode:
+    0x0000000: 2ab6 011d 4c2a b601 1b4d 2bb9 0136 0100
+    0x0000010: b901 3301 009a 0040 2bb9 0135 0100 3a04
+    0x0000020: a700 133a 0519 05b8 0111 bb00 7859 b701
+    0x0000030: 093a 04bb 008e 5919 04b7 0127 3a05 1905
+    0x0000040: 2bb8 010f b601 28bb 0090 592c 1905 b701
+    0x0000050: 294e a700 17bb 0081 592c 2bb7 010e 3a04
+    0x0000060: 1904 07b6 010d 1904 4ebb 0093 59b7 0131
+    0x0000070: 3a04 2d19 04b6 012c 2dbb 007e 59b7 010c
+    0x0000080: b601 2e3a 052a 1905 1904 b601 232d b0  
+  Exception Handler Table:
+    bci [24, 32] => handler: 35
+  Stackmap Table:
+    full_frame(@35,{Object[#139],Object[#127],Object[#120]},{Object[#128]})
+    append_frame(@51,Top,Object[#120])
+    chop_frame(@85,2)
+    append_frame(@105,Object[#119],Object[#119])
+
+	at org.eclipse.jdt.internal.ui.text.correction.TypeMismatchSubProcessor.createCastProposal(TypeMismatchSubProcessor.java:318)
+	at org.eclipse.jdt.internal.ui.text.correction.TypeMismatchSubProcessor.addTypeMismatchProposals(TypeMismatchSubProcessor.java:161)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:388)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:384)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:344)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:474)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:102)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:76)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:301)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:188)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1192)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1161)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:894)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:247)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:237)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
