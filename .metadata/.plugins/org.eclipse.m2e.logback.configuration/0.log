@@ -401,3 +401,4 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430) ~[na:na]
 	... 8 common frames omitted
 2021-03-31 09:44:09,130 [Worker-23] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-03-31 17:35:48,063 [Worker-7] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
