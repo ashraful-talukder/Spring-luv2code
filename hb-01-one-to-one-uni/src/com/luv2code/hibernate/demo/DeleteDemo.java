@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 import com.luv2code.hibernate.demo.entity.Instructor;
 import com.luv2code.hibernate.demo.entity.InstructorDetail;
 
-public class CreateDemo {
+public class DeleteDemo {
 
 	public static void main(String[] args) {
 
@@ -21,21 +21,21 @@ public class CreateDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			// create the objects
-			Instructor tempInstrutor = new Instructor("Samiullah", "Hossain", "tsami@gmail.com");
-			InstructorDetail tempInstructorDetail = new InstructorDetail("https://youtube.com/hossain-sami", "Swimming");
-			
-			// associate the objects
-			tempInstrutor.setInstructionDetail(tempInstructorDetail);
 			
 			// start a transaction
 			session.beginTransaction();
 			
-			// save the instructor
-			System.out.println("Saving instructor: "  + tempInstructorDetail);
-			System.out.println("Saving instructor: "  + tempInstrutor);
-			session.save(tempInstrutor);	// this will also save the details object because of "CascadeType.ALL"
+			// get instructor by primary key / id
+			int theId = 2;
+			Instructor tempInstructor = session.get(Instructor.class, theId);
+			System.out.println("Found instrutor: " + tempInstructor);
 			
+			
+			// delete the instructors
+			if(tempInstructor != null) {
+				System.out.println("Deleting: " + tempInstructor);
+				session.delete(tempInstructor); // this also delete associate tables value because of "Cascade.ALL"
+			}
 			
 			// commit transaction
 			session.getTransaction().commit();
