@@ -42,6 +42,7 @@ public class EagerLazyDemo {
 			session.close();
 			
 			// get courses for the instructor
+			System.out.println("Session has been ended!");
 			System.out.println("Luv2Code : Courses: " + tempInstructor.getCourses());
 			
 			
