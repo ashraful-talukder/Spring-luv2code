@@ -49,7 +49,6 @@ public class Course {
 	@JoinColumn(name="course_id")
 	private List<Review> reviews;
 	
-	private List<Student> students;
 	
 	public Course() {
 		
@@ -90,14 +89,6 @@ public class Course {
 
 	public void setReviews(List<Review> reviews) {
 		this.reviews = reviews;
-	}
-
-	public List<Student> getStudents() {
-		return students;
-	}
-
-	public void setStudents(List<Student> students) {
-		this.students = students;
 	}
 
 	@Override
