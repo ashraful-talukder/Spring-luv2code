@@ -8,8 +8,9 @@ import com.luv2code.hibernate.demo.entity.Course;
 import com.luv2code.hibernate.demo.entity.Instructor;
 import com.luv2code.hibernate.demo.entity.InstructorDetail;
 import com.luv2code.hibernate.demo.entity.Review;
+import com.luv2code.hibernate.demo.entity.Student;
 
-public class CreateCourseAndReviewsDemo {
+public class CreateCourseAndStudentsDemo {
 
 	public static void main(String[] args) {
 
@@ -19,6 +20,7 @@ public class CreateCourseAndReviewsDemo {
 									.addAnnotatedClass(InstructorDetail.class)
 									.addAnnotatedClass(Review.class)
 									.addAnnotatedClass(Course.class)
+									.addAnnotatedClass(Student.class)
 									.buildSessionFactory();
 		
 		// create a session
@@ -31,17 +33,20 @@ public class CreateCourseAndReviewsDemo {
 			
 			// create a course
 			Course tempCourse = new Course("Biology");
-			
-			// add some reviews
-			tempCourse.addReview(new Review("Great Course...Love it!"));
-			tempCourse.addReview(new Review("So Hard!"));
-			tempCourse.addReview(new Review("Not my thing...can't remember the steps!"));
-			
-			// save the course and leverage the cascade all
-			System.out.println("Saving the course: " + tempCourse);
-			System.out.println(tempCourse.getReviews());
-			
 			session.save(tempCourse);
+			
+			// create the students
+			Student tempStudent1 = new Student("Ashraful", "Talukder", "ashraful@gmail.com");
+			Student tempStudent2 = new Student("Chayan", "Mistry", "chayan@gmail.com");
+			
+			// add the students to the course
+			tempCourse.addStudent(tempStudent1);
+			tempCourse.addStudent(tempStudent2);
+			
+			// save the students
+			System.out.println("saving students...");
+			session.save(tempStudent1);
+			session.save(tempStudent2);
 			
 			// commit transaction
 			session.getTransaction().commit();
