@@ -32,8 +32,8 @@
           destroy-method="close">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&amp;serverTimezone=UTC" />
-        <property name="user" value="springstudent" />
-        <property name="password" value="springstudent" /> 
+        <property name="user" value="hbstudent" />
+        <property name="password" value="hbstudent" /> 
 
         <!-- these are connection pool properties for C3P0 -->
 		<property name="initialPoolSize" value="5"/>
