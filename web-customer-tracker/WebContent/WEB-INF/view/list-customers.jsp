@@ -22,7 +22,7 @@
 	
 	<div id="container">
 		<div id="content">
-			<table>
+			<table align="center">
 				<tr>
 					<th>First Name</th>
 					<th>Last Name</th>
