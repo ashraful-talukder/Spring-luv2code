@@ -4,7 +4,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.luv2code.springdemo.dao.CustomerDAOImpl;
+import com.luv2code.springdemo.dao.CustomerDAO;
 import com.luv2code.springdemo.entity.Customer;
 
 @Service
@@ -12,7 +12,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	// need to inject customer DAO
 	@Autowired
-	private CustomerDAOImpl customerDAO;
+	private CustomerDAO customerDAO;
 	
 	@Override
 	@Transactional
@@ -24,6 +24,12 @@ public class CustomerServiceImpl implements CustomerService {
 	@Transactional
 	public void saveCustomer(Customer theCustomer) {
 		customerDAO.saveCustomer(theCustomer);
+	}
+
+	@Override
+	@Transactional
+	public Customer getCustomer(int theId) {
+		return customerDAO.getCustomer(theId);
 	}
 
 }
