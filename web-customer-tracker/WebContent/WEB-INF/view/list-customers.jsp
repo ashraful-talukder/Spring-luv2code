@@ -32,6 +32,7 @@
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>Action</th>
 				</tr>
 				<c:forEach var="tempCustomer" items="${customers}">
 					<tr>
