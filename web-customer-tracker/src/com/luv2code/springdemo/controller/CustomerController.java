@@ -35,6 +35,7 @@ public class CustomerController {
 	
 	@GetMapping("/showFormForAdd")
 	public String showFormForAdd(Model theModel) {
+		
 		// create model attribute to bind form data
 		Customer theCustomer = new Customer();
 		
@@ -45,6 +46,7 @@ public class CustomerController {
 	
 	@PostMapping("/saveCustomer")
 	public String saveCustomer(@ModelAttribute("customer") Customer theCustomer) {
+		
 		// save the customer using our service
 		customerService.saveCustomer(theCustomer);
 		
@@ -53,6 +55,7 @@ public class CustomerController {
 	
 	@GetMapping("/showFormForUpdate")
 	public String showFormForUpdate(@RequestParam("customerId") int theId, Model theModel) {
+		
 		// get the customer from the service
 		Customer theCustomer = customerService.getCustomer(theId);
 		
