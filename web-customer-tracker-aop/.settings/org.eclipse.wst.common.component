@@ -2,7 +2,7 @@
     <wb-module deploy-name="web-customer-tracker">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="web-customer-tracker"/>
         <property name="java-output-path" value="/web-customer-tracker/build/classes"/>
+        <property name="context-root" value="web-customer-tracker-aop"/>
     </wb-module>
 </project-modules>
