@@ -48,7 +48,7 @@ public class CRMLoggingAspect {
 		// get the arguments
 		Object[] args = theJoinPoint.getArgs();
 		
-		// loop through and display arg
+		// loop through and display argument
 		for(Object tempArg: args) {
 			myLogger.info("=====>>> argument: " + tempArg);
 		}
