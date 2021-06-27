@@ -62,6 +62,6 @@ public class CRMLoggingAspect {
 		myLogger.info("=====>>> in @AfterReturning: calling method: " + theMethod);
 		
 		// display data returned
-		myLogger.info("=====>>>result: " + theResult);
+		myLogger.info("=====>>>result: " + theResult); 
 	}
 }
