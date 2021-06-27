@@ -33,7 +33,9 @@ public class CRMLoggingAspect {
 	}
 	
 	@Pointcut("forControllerPackage() || forServicePackage() || forDAOPackage()")
-	private void forAppFlow() {}
+	private void forAppFlow() {
+		
+	}
 	
 	// add @Before advice
 	@Before("forAppFlow()")
