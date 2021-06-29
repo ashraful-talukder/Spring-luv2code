@@ -10,8 +10,8 @@
 	<name>spring-security-demo</name>
 
 	<properties>
-		<springframework.version>5.0.2.RELEASE</springframework.version>
-		<springsecurity.version>5.0.0.RELEASE</springsecurity.version>
+		<springframework.version>5.3.8</springframework.version>
+		<springsecurity.version>5.5.1</springsecurity.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -24,15 +24,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-		<dependency>
-		    <groupId>org.springframework</groupId>
-		    <artifactId>spring-webmvc</artifactId>
-		    <version>5.3.8</version>
-		</dependency>
-		
+		</dependency>	
 		
 		<!-- Spring Security -->
 		<!-- Spring-security-web and spring-security-config -->
@@ -43,26 +35,12 @@
 		    <version>${springsecurity.version}</version>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
-		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-web</artifactId>
-		    <version>5.5.1</version>
-		</dependency>
-		
 		
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-config</artifactId>
 		    <version>${springsecurity.version}</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
-		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-config</artifactId>
-		    <version>5.5.1</version>
 		</dependency>
 		
 		
