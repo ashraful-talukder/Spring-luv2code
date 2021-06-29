@@ -6,7 +6,7 @@
 <br><br><br>
 
 <h4><b>Project: spring-security-demo-02-basic-security</b></h4>
-<p><b>Details: </b></p>
+<p><b>Details: </b>This project consists of only a basic login form which is provided by the spring. It also covered on folder-47</p>
 
 
 
