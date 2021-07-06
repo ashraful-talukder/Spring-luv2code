@@ -17,7 +17,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		// add our users for in memory authentication
 		UserBuilder users = User.withDefaultPasswordEncoder();
 		
-		auth.inMemoryAuthentication().withUser(users.username("Ashraful").password("Ash123").roles("CEO"))
+		auth.inMemoryAuthentication().withUser(users.username("Ashraful").password("Ash123").roles("Employee","Manager","CEO"))
 										.withUser(users.username("Bulbul").password("Bul123").roles("Employee", "Manager"))
 										.withUser(users.username("Emon").password("Emo123").roles("Employee"));
 	}
@@ -27,7 +27,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 						.antMatchers("/").hasRole("Employee")
 						.antMatchers("/leaders/**").hasRole("Manager")
-						.antMatchers("/").hasRole("CEO")
+						.antMatchers("/systems/**").hasRole("CEO")
 					.and()
 						.formLogin()
 							.loginPage("/showMyLoginPage")

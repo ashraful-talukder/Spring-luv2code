@@ -27,6 +27,12 @@
 		(Only for Manager peeps)
 	</p>
 		
+	<!-- Add a link to point to /systems...this is for the CEO -->
+	<p>
+		<a href="${pageContext.request.contextPath}/systems">System Setting</a>
+		(Only for Management peeps)
+	</p>
+	
 	<hr>
 	
 	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
