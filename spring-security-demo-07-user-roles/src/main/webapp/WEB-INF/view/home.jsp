@@ -20,18 +20,26 @@
 		Role(s): <security:authentication property="principal.authorities"/>
 	</p>	
 	
-	<!-- Add a link to point to / leaders ... this is for the managers-->
+	<security:authorize access="hasRole('Manager')">
 	
-	<p>
-		<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
-		(Only for Manager peeps)
-	</p>
+		<!-- Add a link to point to / leaders ... this is for the managers-->
 		
-	<!-- Add a link to point to /systems...this is for the CEO -->
-	<p>
-		<a href="${pageContext.request.contextPath}/systems">System Setting</a>
-		(Only for Management peeps)
-	</p>
+		<p>
+			<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
+			(Only for Manager peeps)
+		</p>
+	
+	</security:authorize>
+		
+	<security:authorize access="hasRole('CEO')">
+	
+		<!-- Add a link to point to /systems...this is for the CEO -->
+		<p>
+			<a href="${pageContext.request.contextPath}/systems">System Setting</a>
+			(Only for Management peeps)
+		</p>
+	
+	</security:authorize>
 	
 	<hr>
 	
