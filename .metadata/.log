@@ -1610,3 +1610,689 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:37:54.138
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:47:45.911
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:47:45.913
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:47:47.227
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:47:47.230
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:48:24.642
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:48:24.644
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:23.005
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:23.008
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:23.016
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-07-07 15:49:30.601
+!MESSAGE failed to load maven project for org.eclipse.ui.part.FileEditorInput(/spring-security-demo-08-jdbc-plaintext/pom.xml)
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:804)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$6.call(ProjectRegistryManager.java:1010)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$6.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1008)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:742)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1077)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Contains: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+ for project  at E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+ for project  at E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:794)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$6.call(ProjectRegistryManager.java:1010)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$6.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1008)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:742)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1077)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:579)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:273)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 25 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2021-07-07 15:49:30.602
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2021-07-07 15:49:30.602
+!MESSAGE 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+ for project  at E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+ for project  at E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:794)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$6.call(ProjectRegistryManager.java:1010)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$6.call(ProjectRegistryManager.java:1)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:5065)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:5060)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1008)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:742)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1077)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:579)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:273)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 25 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-07-07 15:49:30.708
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2021-07-07 15:49:30.708
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-07-07 15:49:32.389
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2021-07-07 15:49:32.389
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-07-07 15:49:33.446
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2021-07-07 15:49:33.447
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-07-07 15:49:36.399
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+ for project  at E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+ for project  at E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:742)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1077)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM E:\Exercise\Spring\luv2Code\spring-security-demo-08-jdbc-plaintext\pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5)  @ line 56, column 5
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:579)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:273)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2021-07-07 15:49:36.520
+!MESSAGE Could not read pom.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	... 24 more
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2021-07-07 15:49:36.520
+!MESSAGE Could not read pom.xml
+!STACK 0
+org.apache.maven.model.io.ModelParseException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:86)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<!-- Servlet, JSP and JSTL support -->\n\t\t<d... @56:5) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1121)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2231)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3845)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	... 26 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:44.682
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:44.685
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:44.689
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:45.879
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:45.882
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:52.598
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:52.600
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:49:52.603
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:09.213
+!MESSAGE The POM for org.springf:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:09.220
+!MESSAGE The POM for org.springf:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:09.559
+!MESSAGE The POM for org.springf:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:09.897
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:09.899
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:09.902
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:11.801
+!MESSAGE The POM for org:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:12.192
+!MESSAGE The POM for org:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:12.222
+!MESSAGE The POM for org:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:12.679
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:12.681
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:12.686
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:13.813
+!MESSAGE The POM for org:spring-security-config:jar:5.5.1 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:13.988
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:50:13.990
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:28.129
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:28.131
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:28.135
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:45.054
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:45.056
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:45.059
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:46.667
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:46.669
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:51:46.672
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:06.730
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:06.732
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:06.736
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:07.971
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:07.975
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:46.435
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:46.437
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:52:46.441
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:53:27.138
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:53:27.140
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:53:27.144
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:03.418
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:03.419
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:03.421
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:05.383
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:05.385
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:05.388
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:10.501
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:10.502
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:10.505
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:11.745
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:11.747
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:13.585
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:13.587
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:13.589
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:15.128
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:15.130
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:51.538
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:51.540
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:51.542
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:53.193
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:53.195
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:55:53.198
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:57:28.111
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-07-07 15:57:28.127
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
