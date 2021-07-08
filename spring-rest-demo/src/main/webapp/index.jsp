@@ -12,6 +12,8 @@
 	<hr>
 	
 	<a href="${pageContext.request.contextPath}/test/hello">Ri-direct to the test page</a>
+	<br>
+	<a href="${pageContext.request.contextPath}/api/students">Ri-direct to the Student page</a>
 
 </body>
 </html>
