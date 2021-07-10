@@ -10,5 +10,10 @@ public class FunRestController {
 	public String sayHello() {
 		return "Hello World!";
 	}
+	
+	@GetMapping("/ash")
+	public String helloAsh() {
+		return "Ashraful is the boss!";
+	}
 
 }
