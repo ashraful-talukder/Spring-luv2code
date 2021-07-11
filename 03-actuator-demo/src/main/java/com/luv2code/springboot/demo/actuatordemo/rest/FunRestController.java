@@ -11,9 +11,14 @@ public class FunRestController {
 		return "Hello World!";
 	}
 	
-	@GetMapping("/ash")
-	public String helloAsh() {
-		return "Ashraful is the boss!";
+	@GetMapping("/workout")
+	public String getWorkout() {
+		return "run hard 5k!";
+	}
+	
+	@GetMapping("fortune")
+	public String getFortune() {
+		return "today is your lucky day!";
 	}
 
 }
