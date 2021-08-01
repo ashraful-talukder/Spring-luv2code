@@ -7,7 +7,3 @@
 
 <h2>spring-security-demo-02-basic-security</h2>
 <p>This project consists of only a basic login form which is provided by the spring. It also covered on folder-47</p>
-
-
-
-
