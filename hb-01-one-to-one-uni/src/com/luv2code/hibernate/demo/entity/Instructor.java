@@ -16,7 +16,7 @@ public class Instructor {
 
 	/*
 	
-	1. annotate the class as an entity and map to db table
+	1. annotate the class as an entity and map to DB table
 	
 	2. define the fields
 	
