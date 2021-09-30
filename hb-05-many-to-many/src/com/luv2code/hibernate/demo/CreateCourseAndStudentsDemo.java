@@ -32,12 +32,12 @@ public class CreateCourseAndStudentsDemo {
 			session.beginTransaction();
 			
 			// create a course
-			Course tempCourse = new Course("Biology");
+			Course tempCourse = new Course("Philosophy");
 			session.save(tempCourse);
 			
 			// create the students
 			Student tempStudent1 = new Student("Ashraful", "Talukder", "ashraful@gmail.com");
-			Student tempStudent2 = new Student("Chayan", "Mistry", "chayan@gmail.com");
+			Student tempStudent2 = new Student("Litan", "Sarkar", "sarkar@gmail.com");
 			
 			// add the students to the course
 			tempCourse.addStudent(tempStudent1);
