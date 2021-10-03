@@ -13,7 +13,7 @@ import com.luv2code.springboot.cruddemo.entity.Employee;
 @Repository
 public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 
-	// define field for entitymanager
+	// define field for entityManager
 	
 	private EntityManager entityManager;
 	
