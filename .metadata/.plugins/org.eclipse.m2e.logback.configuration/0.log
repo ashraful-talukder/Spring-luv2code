@@ -27066,3 +27066,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration Application (1) ref
 2021-10-03 11:14:16,824 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-10-03 11:14:16,824 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-10-03 11:14:16,824 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Exercise\Spring\luv2Code\21-hibernate-with-service-demo\src\test\resources
+2021-10-03 11:22:54,270 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
